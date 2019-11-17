@@ -1,4 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
 img.pocetnaSlika { 
     max-width: 100%;
 	height: auto;
-	}
+}
+
+.top-nav {
+	background-color: #ededed;
+	overflow: hidden;
+	display: flex;
+	align-content: space-between;
+	align-items: center;
+	justify-content: center;
+}
+
+.top-nav a {
+	font-family: 'Work Sans', sans-serif;
+  	color: #846954;
+
+	text-decoration: none;
+	align-self: center;
+	padding: 20px 10px;
+	font-size: 12px;
+}
+
+#top-nav-logo {
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	padding: 0px 20px;
+}
+
+.top-nav img {
+	height: 18px;
+	align-self: center;
+	filter: brightness(0.25);
+}
+
+#ig-icon {
+	height: 16px;
+}
+
+.top-nav a:hover {
+	background-color: #a5d74d;
+	color: #ededed;
+}
+
+
+
+/* tamno braon: #543b23
+svetlija braon: #846954
+sivo bela: #ededed
+svetlo zelena: #a5d74d
+zelena: #81be1c  */
