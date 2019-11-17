@@ -1,0 +1,70 @@
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+  }
+body{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    background-image: url(../images/slika3.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Work Sans';
+    background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.contact-title{
+    margin-top: 200px;
+    margin-left: 100px;
+    background: rgba(237,237,237,0.4);
+    /* text-transform: uppercase; */
+     /* transition: all 4s ease-in-out;  */
+}
+.contact-title p{
+    font-size: 30px;
+    line-height: 30px;
+}
+
+form{
+   
+    margin-right: 60px;
+    margin-top:200px;
+    background: rgba(237,237,237,0.4);
+
+}
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline:none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.form-control::placeholder{
+    color:black;;
+}
+input{
+    height:45px;
+
+}
+form .submit{
+    background: #81be1c;
+    border-color: transparent;
+    color: #fff;
+    font-size:20px;
+    font-weight:bold;
+    letter-spacing: 2px;
+    height:50px;
+    margin-top: 20px;
+}
+form .submit:hover{
+    background-color: #a5d74d;
+    cursor: pointer;
+}
