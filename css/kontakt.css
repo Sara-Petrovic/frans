@@ -97,10 +97,6 @@ nav {
 	height: 100px;
 }
 
-.hamburger {
-    display: none;
-}
-
 @media screen and (max-width: 768px) {
 	#logo {
 		display: none;
