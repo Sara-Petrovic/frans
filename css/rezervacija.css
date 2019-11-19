@@ -43,49 +43,83 @@ nav {
     background-size: cover;
 }
 .title{
-    position: absolute;
     font-size: 50px;
     color: #ededed;
 	font-family: 'Playfair Display', serif;
     font-weight: bold;
     text-align: center;
-    top: 40%;
-    left: 40%;
+	top: 40%;
+	left: 40%;
+	transform: translate(0em, 3.5em);
 }
 
 /* Forma */
-#name, #tel-num, #email, #day, 
-#month, #time, #customers, select {
-    padding: 12px;
+.container{
+	margin: 5% 0%;
 }
-  
-  /* Style the label to display next to the inputs */
+h1{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 40px;
+	flex-grow: 100%;
+	color: #543b23;
+	margin: 0.5em 0em;
+}
+#day, #month, #time {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	padding: 0.5em 0em;
+	width: 100%;
+}
 label {
+	font-family: 'Work Sans', serif;
+	font-weight: 600;
+	color: #543b23;
     padding: 1em 0em 0.5em 0em;
     display: block;
 }
-  
-/* Style the submit button */
-.submit {
-
+#submit {
+	border: none;
+	border-radius: 0.75em;
+	background-color: #846954;
+	color: #ededed;
+	font-family: 'Work Sans', serif;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 0.75em 1em;
+	margin: 2em 0em;
 }
-
-  /* Style the container */
 .row {
 	display: flex;
+	width: 50%;
+	margin-left: 25%;
 }
-  
-
 .col-33 {
 	flex: 33.3333%;
+	align-self: flex-end;
 }
-
+.col-33 input {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	padding: 0.5em 0em;
+	width: 95%;
+	border: none;
+	border-bottom: 2px solid #846954;
+}
 .col-165 {
-	float: left;
 	flex: 16.5%;
 }
+.col-165 select, .col-33 select{
+	border: none;
+	border-bottom: 2px solid #846954;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	padding: 0.5em 0em;
+}
+
 
 @media screen and (max-width: 768px) {
+	/* Navbar */
 	#logo {
 		display: none;
 	}
@@ -124,9 +158,41 @@ label {
 	}
 	.nav-links li {
 		padding: 20px 0px;
-    }
+	}
 }
 
+@media screen and (max-width: 800px) {
+	/* Forma */
+	.container{
+		margin: 5% 0%;	
+	}
+	#day, #month, #time, select {
+		padding: 1em;
+		width: 100%;
+	}
+	label {
+		padding: 1em 0em 0.5em 0em;
+		display: block;
+	}
+	.submit {
+
+	}
+	.row {
+		display: flex;
+		flex-flow: row wrap;
+		width: 50%;
+	}
+	.col-33 {
+		flex: 100%;
+	}
+	.col-33 input {
+		padding: 1em 0em;
+		width: 100%;
+	}
+	.col-165 {
+		flex: 50%;
+	}
+}
 /* tamno braon: #543b23
 svetlija braon: #846954
 sivo bela: #ededed
