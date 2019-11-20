@@ -1,0 +1,14 @@
+body{
+	background: #ededed;
+	margin: 0;
+	color:rgba(0,0,0,0.9);
+	font-family: 'Work Sans' sans-serif;
+}
+
+h2{
+    cursor: pointer;
+
+}
+h2:hover{
+    color:#a5d74d;
+}
