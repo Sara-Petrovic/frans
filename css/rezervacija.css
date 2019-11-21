@@ -30,7 +30,7 @@ nav {
 	transition: 250ms;
 } 
 #logo {
-	height: 100px;
+	height: 15vh;
 }
 
 /* Parallax */
@@ -81,13 +81,17 @@ label {
 #submit {
 	border: none;
 	border-radius: 0.75em;
-	background-color: #846954;
+	background-color: #543b23;
 	color: #ededed;
 	font-family: 'Work Sans', serif;
 	font-weight: 600;
 	font-size: 20px;
 	padding: 0.75em 1em;
 	margin: 2em 0em;
+}
+#submit:hover{
+	background-color: #846954;
+	cursor: pointer;
 }
 .row {
 	display: flex;
