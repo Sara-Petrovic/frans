@@ -174,9 +174,6 @@ label {
 		padding: 1em 0em 0.5em 0em;
 		display: block;
 	}
-	.submit {
-
-	}
 	.row {
 		display: flex;
 		flex-flow: row wrap;

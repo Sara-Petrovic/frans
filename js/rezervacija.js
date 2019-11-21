@@ -13,7 +13,7 @@ function validateForm() {
         }
     }
 
-    var email = document.querySelector('#email').value;
+    var email = document.getElementById("email").value;
     if(email === ""){
         alert("Molim Vas, unesite email.");
         return false;
