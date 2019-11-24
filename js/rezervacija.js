@@ -35,12 +35,11 @@ function validateForm() {
     }
 }
 
-
 //Datum
 var currentDate= new Date();
 var month = currentDate.getMonth();
 var day = currentDate.getDate();
 var year = currentDate.getFullYear();
-var fullDate = day + "/" + month + "/" + year;
+var fullDate = day + "/" + (month+1) + "/" + year;
 document.getElementById('date').innerHTML = fullDate;
 // document.getElementById('date').innerHTML = currentDate.toDateString();

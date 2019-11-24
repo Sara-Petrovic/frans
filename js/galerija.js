@@ -75,13 +75,3 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "Sniženje je počelo!";
   }
 }, 1000);
-
-
-//Datum
-var currentDate = new Date();
-var month = currentDate.getMonth();
-var day = currentDate.getDate();
-var year = currentDate.getFullYear();
-var fullDate = day + "/" + month + "/" + year;
-document.getElementById('date').innerHTML = fullDate;
-// document.getElementById('date').innerHTML = currentDate.toDateString();
