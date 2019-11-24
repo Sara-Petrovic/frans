@@ -1,8 +1,112 @@
-div.gallery {
-    margin: 5px;
-    float: left;
-    width: 300px;
-  }
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+.title{
+  margin-top:4%;
+  color: #543b23;
+  text-align: center;
+  font-family: 'Playfair Display' , serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+/* Koriscenje Window i Timer funkcionalnosti */
+h2{
+  cursor: pointer;
+
+}
+.timerWindow{
+  color: #543b23;
+  text-align: center;
+  font-family: 'Playfair Display' , serif;
+}
+h2:hover{
+  color:#a5d74d;
+}
+/* Navbar */
+nav {
+	height: 10vh;
+	background-color: #ededed;
+}
+.nav-links {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	transform: translate(-0.5%, 0%);
+}
+.nav-links li a {
+	color: #846954;
+	text-decoration: none;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;	
+	padding: 0em 1.2em;	
+}	
+.nav-links li a:hover {
+	color: #a5d74d;
+	transition: 250ms;
+} 
+#logo {
+	height: 15vh;
+}
+
+@media screen and (max-width: 768px) {
+	/* Navbar */
+	#logo {
+		display: none;
+	}
+	.line {
+		width: 30px;
+		height: 3px;
+		background: #543b23;
+		margin: 5px;
+	  }
+
+	nav {
+		position: relative;
+		width: auto;
+	}	
+	.hamburger {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 30%;
+		z-index: 3;
+	}
+	.nav-links {
+		z-index: 2;
+		position: fixed;
+		background-color: #ededed;
+		height: 100%;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -15%);
+		-webkit-clip-path: circle(100px at 90% -15%);
+		transition:  all 1s ease-out;
+		pointer-events: none;
+	}
+	.nav-links.open {
+		clip-path: circle(1050px at 90% -15%);
+		-webkit-clip-path: circle(1050px at 90% -15%);
+		pointer-events: all;
+	}
+	.nav-links li {
+		padding: 20px 0px;
+	}
+}
+
+/* Slider */
+.thing{
+  width:80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
   
   div.gallery:hover {
     opacity: 0.5;
@@ -14,25 +118,31 @@ div.gallery {
     height: auto;
   }
   /* moze li ovo za strelice */
-  .slick-prev{
-    background:#000;
-    width:50px;
-    height:50px;
-    position:absolute;
-    left:0;
-    top:50%;
-    -ms-transform: translateY(-50%); /* IE 9 */
-    -webkit-transform: translateY(-50%); /* Safari */
-    transform: translateY(-50%);
-    }
-.slick-next{
-    background:#000;
-    width:50px;
-    height:50px;
-    position:absolute;
-    right:0;
-    top:50%;
-    -ms-transform: translateY(-50%); /* IE 9 */
-    -webkit-transform: translateY(-50%); /* Safari */
-    transform: translateY(-50%);
-    }
+ 
+
+  .slick-slide{
+    margin: 0 20px;
+  }
+ 
+  .slick-prev:before, .slick-next:before { 
+    color: #a5d74d !important;
+  }
+
+  /* .slick-prev, .slick-next {
+    z-index: 1000;
+    color: black;
+  } */
+
+  /* .prev{
+    display: block;
+    height: 20px;
+    width: 20px;
+    /* background: url('images/button_left.png') no-repeat; */
+  /* }
+
+  .next{
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: url('images/button_right.png') no-repeat;
+  } */ 
