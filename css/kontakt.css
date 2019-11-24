@@ -6,8 +6,7 @@
 .row {
 	display: flex;
 	align-items: top;
-
-  }
+}
   
 .column {
 	flex: 50%;
@@ -17,23 +16,21 @@
 body{
 	height: 100vh;
 	display: block;
-    text-align: center;
     background-image: url(../images/slika3.jpg);
     background-position: top;
     font-family: 'Work Sans', sans-serif;
     background-size: cover;
 	background-repeat: no-repeat;
-	overflow: hidden;
 }
 
 /* Content */
 .contact-title{
+	text-align: center;
 	box-shadow: 0.2em 0.4em 0.8em #543b23;
 	width: 40%;
 	margin-top: 15vh;
 	padding: 1em 2em;
 	background-color: #ededed;
-
 }
 .contact-title h1{
 	font-family: "Playfair Display", serif;
@@ -66,7 +63,6 @@ body{
 }
 input{
     height:2.5em;
-
 }
 form .submit{
 	font-family: 'Work Sans', sans-serif;
@@ -115,6 +111,68 @@ nav {
 	height: 15vh;
 }
 
+/* footer */
+.footer{
+	background-color: #846954;
+	color: #ededed;
+	margin-top: 30vh;
+}
+.space{
+	height: 4vh;
+}
+.row-footer{
+	display: flex;
+	flex: row;
+	width: 90%;
+	margin-left: 5%;
+	padding-bottom: 3%;
+	align-items: center;
+}
+.footer-about, .footer-nav, .footer-contact{
+	flex: 100%;
+	padding-left: 2em;
+}
+.footer-about{
+	color: #ededed;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+}
+.footer-nav-links{
+	list-style: none;
+}
+.footer-nav li a{
+	display: block;
+	color: #ededed;
+	text-decoration: none;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	margin-bottom: 0.75em;	
+}
+.footer-nav li a:hover{
+	color: #81be1c;
+	transition: all .3s;
+}
+.footer h2{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	color: #543b23;
+	margin-bottom: 0.5em;
+}
+.footer-contact ul{
+	list-style: none;
+}
+.footer-contact ul li{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	padding: 0.75em 0em;
+}
+#date{
+	color: #ededed;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* responzivnost */
 @media screen and (max-width: 768px) {
 	/* Navbar */
 	#logo {
@@ -125,8 +183,7 @@ nav {
 		height: 3px;
 		background: #543b23;
 		margin: 5px;
-	  }
-
+	}
 	nav {
 		position: relative;
 		width: auto;
@@ -145,14 +202,14 @@ nav {
 		height: 100%;
 		width: 100%;
 		flex-direction: column;
-		clip-path: circle(100px at 90% -15%);
-		-webkit-clip-path: circle(100px at 90% -15%);
+		clip-path: circle(100px at 90% -20%);
+		-webkit-clip-path: circle(100px at 90% -20%);
 		transition:  all 1s ease-out;
 		pointer-events: none;
 	}
 	.nav-links.open {
-		clip-path: circle(1050px at 90% -15%);
-		-webkit-clip-path: circle(1050px at 90% -15%);
+		clip-path: circle(1050px at 90% -20%);
+		-webkit-clip-path: circle(1050px at 90% -20%);
 		pointer-events: all;
 	}
 	.nav-links li {
@@ -164,13 +221,12 @@ nav {
 		background-color: #ededed;
 		background-image: url(#);
 	}
-
 	.row{
 		display: flex;
 		flex-direction: column;
 	}
 	.column{
-		width: 100%
+		width: 100%;
 	}	
 	.contact-title{
 		margin-top: 0vh;
@@ -180,52 +236,35 @@ nav {
 		padding-bottom: 3em;
 		background-color: #ededed;	
 	}
-	.contact-title h1{
-		font-family: "Playfair Display", serif;
-		color: #543b23;
-		padding-bottom: 0.5em;
-	}
 	.contact-title p{
-		padding: 0em 1.5em;
 		text-align: center;
-		font-size: 18px;
-		line-height: 1.5em;
 	}
 	.contact-form {
 		margin-top: 0%;
 		box-shadow: 0px 0px 0px 0px #543b23;
-		background-color: #ededed;
 		padding: 0em 0em;
 	}
 	.form-control{
 		width: 50%;
-		background: transparent;
-		border: none;
-		border-bottom: 1px solid #543b23;
-		font-size: 18px;
-		margin-bottom: 0.75em;
-	}
-	.form-control::placeholder{
-		color: #543b23;
-	}
-	input{
-		height:2.5em;
-	}
-	form .submit{
-		font-family: 'Work Sans', sans-serif;
-		background: #81be1c;
-		border-color: transparent;
-		border-radius: 0.75em;
-		color: #fff;
-		font-size:20px;
-		font-weight:600;
-		height:2.5em;
-		margin-top: 1em;
-		width: 8em;
-	}
-	form .submit:hover{
-		background-color: #a5d74d;
-		cursor: pointer;
+		margin-left: 25%;
 	}
 		
+	/* footer*/
+	.footer{
+		margin-top: 5vh;
+	}
+	.row-footer{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.footer-about, .footer-nav, .footer-contact{
+		margin-top: 2em;
+	}
+}
+
+@media screen and (min-height: 1366px){
+	.footer{
+		padding-bottom: 5vh;
+	}
 }

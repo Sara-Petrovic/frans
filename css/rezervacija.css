@@ -27,7 +27,7 @@ nav {
 }	
 .nav-links li a:hover {
 	color: #a5d74d;
-	transition: 250ms;
+	transition: all .3s;
 } 
 #logo {
 	height: 15vh;
@@ -125,69 +125,60 @@ label {
 .footer{
 	background-color: #846954;
 	color: #ededed;
-	height: 300px;
-	/* display: flex;
-	flex: row wrap;
-	align-items: flex-end; */
-	left: 0;
-	bottom: 0;
-	/* display: flex;
-	flex: column; */
 }
 .space{
-	height: 5vh;
+	height: 4vh;
 }
 .row-footer{
 	display: flex;
 	flex: row;
 	width: 90%;
 	margin-left: 5%;
-	
+	padding-bottom: 3%;
 	align-items: center;
 }
+.footer-about, .footer-nav, .footer-contact{
+	flex: 100%;
+	padding-left: 2em;
+}
 .footer-about{
-	width: 33%;
-	padding-left: 2em;
-}
-.footer-about img{
-	width: 33%;
-}
-.footer-nav{
-	width: 33%;
-	height: 100%;
-	padding-left: 2em;
-	
+	color: #ededed;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
 }
 .footer-nav-links{
-	padding-top: 1em;
 	list-style: none;
 }
-.footer-nav li{
-	padding: 0.2em 0em;
-}
 .footer-nav li a{
+	display: block;
 	color: #ededed;
 	text-decoration: none;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 14px;
-	padding: 1em 0em;
+	margin-bottom: 0.75em;	
 }
-.footer-contact{
-	width: 33%;
-	padding-left: 2em;
+.footer-nav li a:hover{
+	color: #81be1c;
+	transition: all .3s;
+}
+.footer h2{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	color: #543b23;
+	margin-bottom: 0.5em;
 }
 .footer-contact ul{
 	list-style: none;
 }
-.footer .copyright{
-	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 5vh;	
-	padding-top: 2em;
-	text-align: center;
+.footer-contact ul li{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	padding: 0.75em 0em;
+}
+#date{
+	color: #ededed;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 
@@ -219,8 +210,8 @@ label {
 		height: 100%;
 		width: 100%;
 		flex-direction: column;
-		clip-path: circle(100px at 90% -15%);
-		-webkit-clip-path: circle(100px at 90% -15%);
+		clip-path: circle(100px at 90% -20%);
+		-webkit-clip-path: circle(100px at 90% -20%);
 		transition:  all 1s ease-out;
 		pointer-events: none;
 	}
@@ -236,16 +227,9 @@ label {
 
 @media screen and (max-width: 800px) {
 	/* Forma */
-	.container{
-		margin: 5% 0%;	
-	}
 	#day, #month, #time, select {
 		padding: 1em;
 		width: 100%;
-	}
-	label {
-		padding: 1em 0em 0.5em 0em;
-		display: block;
 	}
 	.row {
 		display: flex;
@@ -261,6 +245,16 @@ label {
 	}
 	.col-165 {
 		flex: 50%;
+	}
+
+	/* footer */
+	.row-footer{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.footer-about, .footer-nav, .footer-contact{
+		margin-top: 2em;
 	}
 }
 /* tamno braon: #543b23

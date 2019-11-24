@@ -34,3 +34,13 @@ function validateForm() {
         return false;
     }
 }
+
+
+//Datum
+var currentDate= new Date();
+var month = currentDate.getMonth();
+var day = currentDate.getDate();
+var year = currentDate.getFullYear();
+var fullDate = day + "/" + month + "/" + year;
+document.getElementById('date').innerHTML = fullDate;
+// document.getElementById('date').innerHTML = currentDate.toDateString();
