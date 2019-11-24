@@ -1,73 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 .row {
-    display: flex;
+	display: flex;
+	align-items: top;
+
   }
   
 .column {
-    flex: 50%;
-  }
+	flex: 50%;
+}
+
+/* Pozadina */
 body{
-    margin:0;
-    padding: 0;
+	height: 100vh;
+	display: block;
     text-align: center;
     background-image: url(../images/slika3.jpg);
-    background-size: center;
-    background-position: center;
-    font-family: 'Work Sans';
+    background-position: top;
+    font-family: 'Work Sans', sans-serif;
     background-size: cover;
 	background-repeat: no-repeat;
-	
+	overflow: hidden;
 }
+
+/* Content */
 .contact-title{
-    margin-top: 200px;
-    margin-left: 100px;
-    background: rgba(237,237,237,0.4);
-    /* text-transform: uppercase; */
-     /* transition: all 4s ease-in-out;  */
+	box-shadow: 0.2em 0.4em 0.8em #543b23;
+	width: 40%;
+	margin-top: 15vh;
+	padding: 1em 2em;
+	background-color: #ededed;
+
+}
+.contact-title h1{
+	font-family: "Playfair Display", serif;
+	color: #543b23;
+	padding-bottom: 0.5em;
 }
 .contact-title p{
-    font-size: 30px;
-    line-height: 30px;
+	padding: 0em 1.5em;
+	text-align: justify;
+	font-size: 18px;
+    line-height: 1.5em;
 }
-
-form{
-   
-    margin-right: 60px;
-    margin-top:200px;
-    background: rgba(237,237,237,0.4);
-
+.contact-form {
+	margin-top: 15vh;
+	background-color: #ededed;
+	padding: 0.5em 2em;
+	box-shadow: 0.2em 0.4em 0.8em #543b23;
 }
 .form-control{
-    width: 600px;
+    width: 100%;
     background: transparent;
-    border: none;
+	border: none;
+	border-bottom: 1px solid #543b23;
     outline:none;
-    border-bottom: 1px solid gray;
-    color: black;
     font-size: 18px;
-    margin-bottom: 16px;
+    margin-bottom: 0.75em;
 }
 .form-control::placeholder{
-    color:black;;
+    color: #543b23;
 }
 input{
-    height:45px;
+    height:2.5em;
 
 }
 form .submit{
+	font-family: 'Work Sans', sans-serif;
     background: #81be1c;
-    border-color: transparent;
+	border-color: transparent;
+	border-radius: 0.75em;
     color: #fff;
     font-size:20px;
-    font-weight:bold;
-    letter-spacing: 2px;
-    height:50px;
-    margin-top: 20px;
+    font-weight:600;
+    height:2.5em;
+	margin-top: 1em;
+	width: 8em;
 }
 form .submit:hover{
     background-color: #a5d74d;
     cursor: pointer;
 }
 
+/* Navbar */
 nav {
 	height: 10vh;
 	background-color: #ededed;
@@ -78,30 +96,27 @@ nav {
 	width: 100%;
 	height: 100%;
 	justify-content: center;
-    align-items: center;
-    transform: translate(-2%, -25%);
+	align-items: center;
+	transform: translate(-0.5%, 0%);
 }
 .nav-links li a {
 	color: #846954;
 	text-decoration: none;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 16px;
-	font-weight: 600;
-	padding: 0px 20px;	
+	font-weight: 600;	
+	padding: 0em 1.2em;	
 }	
 .nav-links li a:hover {
 	color: #a5d74d;
 	transition: 250ms;
 } 
 #logo {
-	height: 100px;
-}
-
-.hamburger {
-    display: none;
+	height: 15vh;
 }
 
 @media screen and (max-width: 768px) {
+	/* Navbar */
 	#logo {
 		display: none;
 	}
@@ -114,6 +129,7 @@ nav {
 
 	nav {
 		position: relative;
+		width: auto;
 	}	
 	.hamburger {
 		position: absolute;
@@ -143,4 +159,73 @@ nav {
 		padding: 20px 0px;
 	}
 
+	/* content */
+	body{
+		background-color: #ededed;
+		background-image: url(#);
+	}
+
+	.row{
+		display: flex;
+		flex-direction: column;
+	}
+	.column{
+		width: 100%
+	}	
+	.contact-title{
+		margin-top: 0vh;
+		width: auto;
+		box-shadow: 0px 0px 0px 0px #543b23;
+		padding: 0em 2em;
+		padding-bottom: 3em;
+		background-color: #ededed;	
+	}
+	.contact-title h1{
+		font-family: "Playfair Display", serif;
+		color: #543b23;
+		padding-bottom: 0.5em;
+	}
+	.contact-title p{
+		padding: 0em 1.5em;
+		text-align: center;
+		font-size: 18px;
+		line-height: 1.5em;
+	}
+	.contact-form {
+		margin-top: 0%;
+		box-shadow: 0px 0px 0px 0px #543b23;
+		background-color: #ededed;
+		padding: 0em 0em;
+	}
+	.form-control{
+		width: 50%;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid #543b23;
+		font-size: 18px;
+		margin-bottom: 0.75em;
+	}
+	.form-control::placeholder{
+		color: #543b23;
+	}
+	input{
+		height:2.5em;
+	}
+	form .submit{
+		font-family: 'Work Sans', sans-serif;
+		background: #81be1c;
+		border-color: transparent;
+		border-radius: 0.75em;
+		color: #fff;
+		font-size:20px;
+		font-weight:600;
+		height:2.5em;
+		margin-top: 1em;
+		width: 8em;
+	}
+	form .submit:hover{
+		background-color: #a5d74d;
+		cursor: pointer;
+	}
+		
 }

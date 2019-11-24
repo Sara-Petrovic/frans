@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="row">
+    <nav class="#">
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -20,31 +20,35 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Dobrodošli</a></li>
-            <li><a href="#">Rezervacija</a></li>
-            <img src="images/logo.svg" id="logo" alt="fb">
+            <li><a href="rezervacija.html">Rezervacija</a></li>
+            <a href="index.html">
+                <img src="images/logo.svg" id="logo" alt="fb">
+            </a>
             <li><a href="kontakt.html">Kontakt</a></li>
             <li><a href="#">Galerija</a></li>
         </ul>
     </nav>
+
     <div class="row">
         <div class="column">
             <div class="contact-title">
-                <p><b>Kontakt</b><br>
-                    Ovde možete ostaviti vaš komentar, primedbu ili sugestiju. </p>
-
+                <h1>Kontakt</h1>
+                <p>Ovde možete ostaviti vaš komentar, primedbu ili sugestiju.</p>
             </div>
         </div>
-        <div class="column"></div>
-        <div class="contact-form">
-            <form id="contact-form" method="post" action="">
-                <!-- ovo metod post kaze da ne mora, ali ce objasniti za sta je -->
-                <input name="name" type="text" class="form-control" placeholder="Vaše ime i prezime " required><br>
-                <input name="email" type="email" class="form-control" placeholder="Vaš mejl " required><br>
-                <textarea name="message" class="form-control" placeholder="Poruka" rows="4" required></textarea><br>
-                <input type="submit" class="form-control submit" value="POŠALJI">
-            </form>
+        <div class="column">
+            <div class="contact-form">
+                <form id="contact-form" method="post" action="">
+                    <!-- ovo metod post kaze da ne mora, ali ce objasniti za sta je -->
+                    <input name="name" type="text" class="form-control" placeholder="Vaše ime i prezime " required><br>
+                    <input name="email" type="email" class="form-control" placeholder="Vaš mejl " required><br>
+                    <textarea name="message" class="form-control" placeholder="Poruka" rows="4" required></textarea><br>
+                    <input type="submit" class="form-control submit" value="Pošalji">
+                </form>
+            </div>
         </div>
     </div>
+
     <script src="js/index.js"></script>
 </body>
 

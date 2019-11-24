@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/rezervacija.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dobrodošli</a></li>
+            <li><a href="#">Rezervacija</a></li>
+            <a href="index.html">
+                <img src="images/logo.svg" id="logo" alt="fb">
+            </a>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="#">Galerija</a></li>
+        </ul>
+    </nav>
+    <div class="parallax">
+        <div class="title">Rezervacije</div>
+    </div>
+    <div class="container">
+        <form onsubmit="return validateForm()" action="#" method="post">
+            <div class="row">
+                <h1>Rezervišite sto</h1>
+            </div>
+            <div class="row">
+                <div class="col-33">
+                    <label for="name">Ime</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="col-33">
+                    <label for="tel-num">Broj telefona</label>
+                    <input type="text" id="tel-num" name="tel-num">
+                </div>
+                <div class="col-33">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-165">
+                    <label for="day">Dan</label>
+                    <select name="day" id="day">
+                        <option value="01">01</option>
+                        <option value="01">02</option>
+                        <option value="01">03</option>
+                        <option value="01">04</option>
+                        <option value="01">05</option>
+                        <option value="01">06</option>
+                        <option value="01">07</option>
+                        <option value="01">08</option>
+                        <option value="01">09</option>
+                        <option value="01">10</option>
+                        <option value="01">11</option>
+                        <option value="01">12</option>
+                        <option value="01">13</option>
+                        <option value="01">14</option>
+                        <option value="01">15</option>
+                        <option value="01">16</option>
+                        <option value="01">17</option>
+                        <option value="01">18</option>
+                        <option value="01">19</option>
+                        <option value="01">20</option>
+                        <option value="01">21</option>
+                        <option value="01">22</option>
+                        <option value="01">23</option>
+                        <option value="01">24</option>
+                        <option value="01">25</option>
+                        <option value="01">26</option>
+                        <option value="01">27</option>
+                        <option value="01">28</option>
+                        <option value="01">29</option>
+                        <option value="01">30</option>
+                        <option value="01">31</option>
+                    </select>
+                </div>
+                <div class="col-165">
+                    <label for="month">Mesec</label>
+                    <select name="month" id="month">
+                        <option value="01">01</option>
+                        <option value="01">02</option>
+                        <option value="01">03</option>
+                        <option value="01">04</option>
+                        <option value="01">05</option>
+                        <option value="01">06</option>
+                        <option value="01">07</option>
+                        <option value="01">08</option>
+                        <option value="01">09</option>
+                        <option value="01">10</option>
+                        <option value="01">11</option>
+                        <option value="01">12</option>
+                    </select>
+                </div>
+                <div class="col-33">
+                    <label for="time">Vreme</label>
+                    <select name="time" id="time">
+                        <option value="8:30">8:30</option>
+                        <option value="9:00">9:00</option>
+                        <option value="9:30">9:30</option>
+                        <option value="19:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                        <option value="22:30">22:30</option>
+                    </select>
+                </div>
+                <div class="col-33">
+                    <label for="customers">Broj gostiju</label>
+                    <input type="number" id="customers" name="customers">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" name="submit" id="submit">
+            </div>
+        </form>
+
+    </div>
+
+    <div class="footer">
+        <div class="space"></div>
+        <div class="row-footer">
+
+            <div class="footer-about">
+                <img src="images/logo.svg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, iste aspernatur? Expedita dolore
+                    tempore iste facere alias voluptatem. Cumque, sapiente.</p>
+            </div>
+            <div class="footer-nav">
+                <h2>Eres</h2>
+                <ul class="footer-nav-links">
+                    <li><a href="index.html">Dobrodošli</a></li>
+                    <li><a href="#">Rezervacija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="#">Galerija</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h2>Kontakt</h2>
+                <ul class="contact-info">
+                    <li>Ulica i broj</li>
+                    <li>Broj telefona</li>
+                    <li>E-mail</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="copyright">
+            <!-- <hr class="copyright-line"> -->
+            <p class="text">&copy; 2019. All rights reserved | Eres Team</p>
+        </div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/rezervacija.js"></script>
+</body>
+
+</html>

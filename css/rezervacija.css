@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Navbar */
+nav {
+	height: 10vh;
+	background-color: #ededed;
+}
+.nav-links {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+}
+.nav-links li a {
+	color: #846954;
+	text-decoration: none;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 0px 20px;	
+}	
+.nav-links li a:hover {
+	color: #a5d74d;
+	transition: 250ms;
+} 
+#logo {
+	height: 15vh;
+}
+
+/* Parallax */
+.parallax {
+    background-image: url("../images/rezervacije.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    font-size: 50px;
+    color: #ededed;
+	font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-align: center;
+	top: 40%;
+	left: 40%;
+	transform: translate(0em, 3.5em);
+}
+
+/* Forma */
+.container{
+	margin: 5% 0%;
+}
+h1{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 40px;
+	flex-grow: 100%;
+	color: #543b23;
+	margin: 0.5em 0em;
+}
+#day, #month, #time {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	padding: 0.5em 0em;
+	width: 100%;
+}
+label {
+	font-family: 'Work Sans', serif;
+	font-weight: 600;
+	color: #543b23;
+    padding: 1em 0em 0.5em 0em;
+    display: block;
+}
+#submit {
+	border: none;
+	border-radius: 0.75em;
+	background-color: #543b23;
+	color: #ededed;
+	font-family: 'Work Sans', serif;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 0.75em 1em;
+	margin: 2em 0em;
+}
+#submit:hover{
+	background-color: #846954;
+	cursor: pointer;
+}
+.row {
+	display: flex;
+	width: 50%;
+	margin-left: 25%;
+}
+.col-33 {
+	flex: 33.3333%;
+	align-self: flex-end;
+}
+.col-33 input {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	padding: 0.5em 0em;
+	width: 95%;
+	border: none;
+	border-bottom: 2px solid #846954;
+}
+.col-165 {
+	flex: 16.5%;
+}
+.col-165 select, .col-33 select{
+	border: none;
+	border-bottom: 2px solid #846954;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	padding: 0.5em 0em;
+}
+
+/* footer */
+.footer{
+	background-color: #846954;
+	color: #ededed;
+	height: 300px;
+	/* display: flex;
+	flex: row wrap;
+	align-items: flex-end; */
+	left: 0;
+	bottom: 0;
+	/* display: flex;
+	flex: column; */
+}
+.space{
+	height: 5vh;
+}
+.row-footer{
+	display: flex;
+	flex: row;
+	width: 90%;
+	margin-left: 5%;
+	
+	align-items: center;
+}
+.footer-about{
+	width: 33%;
+	padding-left: 2em;
+}
+.footer-about img{
+	width: 33%;
+}
+.footer-nav{
+	width: 33%;
+	height: 100%;
+	padding-left: 2em;
+	
+}
+.footer-nav-links{
+	padding-top: 1em;
+	list-style: none;
+}
+.footer-nav li{
+	padding: 0.2em 0em;
+}
+.footer-nav li a{
+	color: #ededed;
+	text-decoration: none;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	padding: 1em 0em;
+}
+.footer-contact{
+	width: 33%;
+	padding-left: 2em;
+}
+.footer-contact ul{
+	list-style: none;
+}
+.footer .copyright{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5vh;	
+	padding-top: 2em;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+	/* Navbar */
+	#logo {
+		display: none;
+	}
+	.line {
+		width: 30px;
+		height: 3px;
+		background: #543b23;
+		margin: 5px;
+	  }
+	nav {
+		position: relative;
+	}
+    .hamburger {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 30%;
+		z-index: 3;
+	}
+	.nav-links {
+		z-index: 2;
+		position: fixed;
+		background-color: #ededed;
+		height: 100%;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -15%);
+		-webkit-clip-path: circle(100px at 90% -15%);
+		transition:  all 1s ease-out;
+		pointer-events: none;
+	}
+	.nav-links.open {
+		clip-path: circle(1050px at 90% -15%);
+		-webkit-clip-path: circle(1050px at 90% -15%);
+		pointer-events: all;
+	}
+	.nav-links li {
+		padding: 20px 0px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* Forma */
+	.container{
+		margin: 5% 0%;	
+	}
+	#day, #month, #time, select {
+		padding: 1em;
+		width: 100%;
+	}
+	label {
+		padding: 1em 0em 0.5em 0em;
+		display: block;
+	}
+	.row {
+		display: flex;
+		flex-flow: row wrap;
+		width: 50%;
+	}
+	.col-33 {
+		flex: 100%;
+	}
+	.col-33 input {
+		padding: 1em 0em;
+		width: 100%;
+	}
+	.col-165 {
+		flex: 50%;
+	}
+}
+/* tamno braon: #543b23
+svetlija braon: #846954
+sivo bela: #ededed
+svetlo zelena: #a5d74d
+zelena: #81be1c  */
