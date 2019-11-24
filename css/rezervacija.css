@@ -138,9 +138,13 @@ label {
 	align-items: center;
 }
 .footer-about, .footer-nav, .footer-contact{
-	flex: 1;
-	
+	flex: 100%;
 	padding-left: 2em;
+}
+.footer-about{
+	color: #ededed;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
 }
 .footer-nav-links{
 	list-style: none;
@@ -170,6 +174,11 @@ label {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 14px;
 	padding: 0.75em 0em;
+}
+#date{
+	color: #ededed;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 
@@ -246,54 +255,13 @@ label {
 	}
 
 	/* footer */
-	.footer{
-		background-color: #846954;
-		color: #ededed;
-	}
-	.space{
-		height: 4vh;
-	}
 	.row-footer{
 		display: flex;
 		flex-direction: column;
-		width: 90%;
-		margin-left: 5%;
-		padding-bottom: 0%;
 		align-items: flex-start;
-		justify-content: center;
 	}
 	.footer-about, .footer-nav, .footer-contact{
-		flex: 1;
 		margin-top: 2em;
-	}
-	.footer-nav-links{
-		list-style: none;
-	}
-	.footer-nav li a{
-		display: block;
-		color: #ededed;
-		text-decoration: none;
-		font-family: 'Work Sans', sans-serif;
-		font-size: 14px;
-		margin-bottom: 0.75em;	
-	}
-	.footer-nav li a:hover{
-		color: #81be1c;
-		transition: all .3s;
-	}
-	.footer h2{
-		font-family: 'Playfair Display', serif;
-		font-weight: bold;
-		color: #543b23;
-		margin-bottom: 0.5em;
-	}
-	.footer-contact ul{
-		list-style: none;
-	}
-	.footer-contact ul li{
-		font-family: 'Work Sans', sans-serif;
-		font-size: 14px;
-		padding: 0.75em 0em;
 	}
 }
 /* tamno braon: #543b23
