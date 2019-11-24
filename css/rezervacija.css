@@ -227,16 +227,9 @@ label {
 
 @media screen and (max-width: 800px) {
 	/* Forma */
-	.container{
-		margin: 5% 0%;	
-	}
 	#day, #month, #time, select {
 		padding: 1em;
 		width: 100%;
-	}
-	label {
-		padding: 1em 0em 0.5em 0em;
-		display: block;
 	}
 	.row {
 		display: flex;

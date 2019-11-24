@@ -15,6 +15,23 @@ $('.thing').slick({
     infinite: false,
     slidesToShow: 2,
     slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          rows: 2,  
+          sllidesPerRow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
     // prevArrow: $('.prev'),
     // nextArrow: $('.next'),
   })
@@ -58,3 +75,13 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "Sniženje je počelo!";
   }
 }, 1000);
+
+
+//Datum
+var currentDate = new Date();
+var month = currentDate.getMonth();
+var day = currentDate.getDate();
+var year = currentDate.getFullYear();
+var fullDate = day + "/" + month + "/" + year;
+document.getElementById('date').innerHTML = fullDate;
+// document.getElementById('date').innerHTML = currentDate.toDateString();
