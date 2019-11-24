@@ -121,6 +121,75 @@ label {
 	padding: 0.5em 0em;
 }
 
+/* footer */
+.footer{
+	background-color: #846954;
+	color: #ededed;
+	height: 300px;
+	/* display: flex;
+	flex: row wrap;
+	align-items: flex-end; */
+	left: 0;
+	bottom: 0;
+	/* display: flex;
+	flex: column; */
+}
+.space{
+	height: 5vh;
+}
+.row-footer{
+	display: flex;
+	flex: row;
+	width: 90%;
+	margin-left: 5%;
+	
+	align-items: center;
+}
+.footer-about{
+	width: 33%;
+	padding-left: 2em;
+}
+.footer-about img{
+	width: 33%;
+}
+.footer-nav{
+	width: 33%;
+	height: 100%;
+	padding-left: 2em;
+	
+}
+.footer-nav-links{
+	padding-top: 1em;
+	list-style: none;
+}
+.footer-nav li{
+	padding: 0.2em 0em;
+}
+.footer-nav li a{
+	color: #ededed;
+	text-decoration: none;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	padding: 1em 0em;
+}
+.footer-contact{
+	width: 33%;
+	padding-left: 2em;
+}
+.footer-contact ul{
+	list-style: none;
+}
+.footer .copyright{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5vh;	
+	padding-top: 2em;
+	text-align: center;
+}
+
 
 @media screen and (max-width: 768px) {
 	/* Navbar */
